@@ -1,0 +1,152 @@
+.body{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+.add_page_maincontainer{
+    display: grid;
+    grid-template-columns: auto;
+    /* grid-template-rows: 1100px;  */
+    width: 1500px;
+    padding: 10px;
+}
+@media only screen and (min-width: 1200px) {
+    .add_page_maincontainer{
+        width: 100%;
+    }
+}
+.add_page_container{
+    display: grid;
+    grid-template-rows: 80px 80px auto;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    /* background-color: red; */
+    background-color: white;
+    width: 1000px;
+    padding: 40px;
+    border-radius: 10px;
+    margin: 0 auto 0;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.add_page_heading{
+    /* background-color: pink; */
+    color:#0038FF;
+    font-size: 28px;
+    font-family: Roboto;
+    font-weight: bold;
+    /* padding: 25px; */
+    /* margin: auto 0 auto 0; */
+}
+.add_page_title_container{
+    /* background-color: purple; */
+}
+.add_page_title{
+    color: #ADADAD;
+    font-size: 22px;
+    font-family: Roboto;
+    font-weight: bold;
+    padding: 0 0 5px 8px;
+}
+.add_page_line_container{
+    display: flex;
+}
+.add_page_line1{
+    border-bottom: 4px solid #0038FF ;
+    width: 20%;
+}
+.add_page_line2{
+    border-bottom: 2px solid #ADADAD;
+    width: 80%;
+    margin-bottom: 1px;
+}
+.add_page_input_container{
+    /* background-color: palegoldenrod; */
+}
+.input_container{
+    display: flex;
+    /* background-color: green; */
+    width: 60%;
+    /* justify-content: space-between; */
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.label{
+    font-size: 20px;
+    font-family: Roboto;
+    font-weight: bold;
+    margin: auto 0 auto 0;
+    width: 30%;
+}
+.field>input{
+    width: 400px;
+    outline: none;
+    border: 2px solid #C2C2C2;
+    background-color: none;
+    padding: 8px;
+    border-radius: 5px;
+}
+.field>select{
+    width: 140px;
+    outline: none;
+    border: 2px solid #C2C2C2;
+    background-color: none;
+    padding: 8px;
+    border-radius: 5px;
+    
+}
+.field>textarea{
+    width: 400px;
+    height: 60px;
+    outline: none;
+    border: 2px solid #C2C2C2;
+    background-color: none;
+    padding: 8px;
+    border-radius: 5px;
+
+}
+.button_container{
+/* background-color: red; */
+display: flex;
+width: 25%;
+float: right;
+justify-content: space-between;
+
+}
+.cancel_button>button{
+    /* background-color: #ADADAD; */
+    border: 2px solid #C2C2C2;
+    color:#C2C2C2;
+    background-color: white;
+    padding: 5px 28px 5px 28px;
+    font-size: 18px;
+    font-family: Roboto;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.cancel_button>button:hover{
+    color: #0038FF;
+}
+.add_button>button{
+    border: 2px solid #0038FF;
+    color:white;
+    background-color: #0038FF;
+    padding: 5px 15px 5px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Roboto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.add_button>button:hover{
+    opacity: 0.8;
+}
